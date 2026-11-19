@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"D001","nama":"Saluran A-01","kondisi":"Buruk","masalah":"Sedimentasi"},"geometry":{"type":"LineString","coordinates":[[101.425,0.513],[101.434,0.523],[101.440,0.527]]}},
+    {"type":"Feature","properties":{"id":"D002","nama":"Saluran A-02","kondisi":"Baik","masalah":"Tidak ada"},"geometry":{"type":"LineString","coordinates":[[101.420,0.528],[101.430,0.529],[101.440,0.529]]}},
+    {"type":"Feature","properties":{"id":"D003","nama":"Saluran B-01","kondisi":"Sedang","masalah":"Sampah ringan"},"geometry":{"type":"LineString","coordinates":[[101.446,0.514],[101.453,0.520],[101.464,0.528]]}},
+    {"type":"Feature","properties":{"id":"D004","nama":"Saluran B-02","kondisi":"Buruk","masalah":"Tersumbat"},"geometry":{"type":"LineString","coordinates":[[101.452,0.510],[101.455,0.519],[101.457,0.525]]}},
+    {"type":"Feature","properties":{"id":"D005","nama":"Saluran C-01","kondisi":"Baik","masalah":"Tidak ada"},"geometry":{"type":"LineString","coordinates":[[101.472,0.511],[101.480,0.515],[101.486,0.516]]}},
+    {"type":"Feature","properties":{"id":"D006","nama":"Saluran C-02","kondisi":"Buruk","masalah":"Retakan dan endapan"},"geometry":{"type":"LineString","coordinates":[[101.476,0.521],[101.483,0.524],[101.490,0.527]]}}
+  ]
+}

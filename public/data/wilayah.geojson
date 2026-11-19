@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"W001","nama":"Zona Contoh A","jenis":"Wilayah demonstrasi"},"geometry":{"type":"Polygon","coordinates":[[[101.418,0.505],[101.443,0.505],[101.443,0.533],[101.418,0.533],[101.418,0.505]]]}},
+    {"type":"Feature","properties":{"id":"W002","nama":"Zona Contoh B","jenis":"Wilayah demonstrasi"},"geometry":{"type":"Polygon","coordinates":[[[101.443,0.505],[101.469,0.505],[101.469,0.533],[101.443,0.533],[101.443,0.505]]]}},
+    {"type":"Feature","properties":{"id":"W003","nama":"Zona Contoh C","jenis":"Wilayah demonstrasi"},"geometry":{"type":"Polygon","coordinates":[[[101.469,0.505],[101.496,0.505],[101.496,0.533],[101.469,0.533],[101.469,0.505]]]}}
+  ]
+}

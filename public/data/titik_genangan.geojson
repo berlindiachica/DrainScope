@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"B001","nama":"Titik Genangan 01","tinggi_cm":32,"kategori":"Sedang"},"geometry":{"type":"Point","coordinates":[101.4306,0.5193]}},
+    {"type":"Feature","properties":{"id":"B002","nama":"Titik Genangan 02","tinggi_cm":48,"kategori":"Tinggi"},"geometry":{"type":"Point","coordinates":[101.4362,0.525]}},
+    {"type":"Feature","properties":{"id":"B003","nama":"Titik Genangan 03","tinggi_cm":25,"kategori":"Sedang"},"geometry":{"type":"Point","coordinates":[101.4552,0.519]}},
+    {"type":"Feature","properties":{"id":"B004","nama":"Titik Genangan 04","tinggi_cm":42,"kategori":"Tinggi"},"geometry":{"type":"Point","coordinates":[101.4803,0.5228]}},
+    {"type":"Feature","properties":{"id":"B005","nama":"Titik Genangan 05","tinggi_cm":12,"kategori":"Rendah"},"geometry":{"type":"Point","coordinates":[101.463,0.512]}},
+    {"type":"Feature","properties":{"id":"B006","nama":"Titik Genangan 06","tinggi_cm":10,"kategori":"Rendah"},"geometry":{"type":"Point","coordinates":[101.4846,0.5115]}},
+    {"type":"Feature","properties":{"id":"B007","nama":"Titik Genangan 07","tinggi_cm":20,"kategori":"Sedang"},"geometry":{"type":"Point","coordinates":[101.475,0.515]}},
+    {"type":"Feature","properties":{"id":"B008","nama":"Titik Genangan 08","tinggi_cm":16,"kategori":"Rendah"},"geometry":{"type":"Point","coordinates":[101.438,0.510]}}
+  ]
+}

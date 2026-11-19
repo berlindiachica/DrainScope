@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DrainScope — Analisis Spasial</title><link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header"><a class="brand" href="/index.html"><img src="/assets/mark.svg" alt=""/><span><strong>DrainScope<span class="brand-dot">.</span></strong><small>Smart drainage. Safer spaces.</small></span></a><button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Navigasi utama"><a href="/index.html">Beranda</a><a href="/peta.html">Peta Interaktif</a><a class="active" href="/analisis.html">Analisis Spasial</a><a href="/index.html#tentang">Tentang</a></nav><div class="header-right"><span class="soft-pill"><span class="pulse-dot"></span> Demo Data</span><span class="avatar">DS</span></div></header>
+    <main class="workspace-main">
+      <div class="page-heading"><div><span class="eyebrow small">PENGAMBILAN KEPUTUSAN SPASIAL</span><h1>Analisis kedekatan <span>genangan.</span></h1><p>Temukan titik genangan yang berada di sekitar saluran drainase berkondisi buruk.</p></div><a class="btn btn-outline small-btn" href="/peta.html">← Kembali ke peta</a></div>
+      <section class="analysis-command"><div><h2>Pengaturan analisis</h2><p>Buffer dibuat dari saluran berkondisi buruk, kemudian diuji dengan titik genangan.</p></div><div class="command-actions"><label for="radius">Radius buffer</label><select id="radius" class="input-select"><option value="50">50 meter</option><option value="100" selected>100 meter</option><option value="200">200 meter</option><option value="300">300 meter</option></select><button id="run-analysis" type="button" class="btn btn-primary">Jalankan analisis ↗</button></div></section>
+      <div class="result-stats"><div class="result-card"><span>Saluran buruk</span><strong id="bad-drains">—</strong><small>Garis sumber buffer</small><i class="result-glyph">≋</i></div><div class="result-card"><span>Titik teridentifikasi</span><strong id="affected-points">—</strong><small>Masuk ke zona buffer</small><i class="result-glyph">⌖</i></div><div class="result-card"><span>Wilayah terkait</span><strong id="affected-areas">—</strong><small>Memiliki titik teridentifikasi</small><i class="result-glyph">▱</i></div></div>
+      <div class="analysis-layout"><section class="analysis-map-card"><div class="analysis-card-header"><div><h2>Visualisasi hasil</h2><p><span id="radius-caption">100</span> meter di sekitar drainase buruk</p></div><span class="map-data-badge">DATA SIMULASI</span></div><div id="analysis-map" class="analysis-map"></div><div class="analysis-map-footer"><span class="legend-row"><i class="legend-dash poor"></i> Drainase buruk</span><span class="legend-row"><i class="legend-fill"></i> Zona buffer</span><span class="legend-row"><i class="legend-dot"></i> Titik genangan</span></div></section><section class="ranking-card"><div class="analysis-card-header"><div><h2>Prioritas pemeriksaan</h2><p>Jumlah titik teridentifikasi per wilayah</p></div></div><div id="ranking-list" class="ranking-list"><p class="loading-text">Memproses data...</p></div></section></div>
+      <div class="method-card"><span class="method-icon">◎</span><div><h3>Bagaimana hasil dihitung?</h3><p>Setiap saluran berkondisi <strong>Buruk</strong> dibuat zona buffer. Titik genangan yang berada di dalam minimal satu buffer dihitung sekali. Selanjutnya titik tersebut dikelompokkan berdasarkan polygon wilayah. Hasil ini adalah <strong>indikasi prioritas pemeriksaan</strong>, bukan prediksi risiko banjir yang telah divalidasi.</p></div></div>
+      <div class="notice-inline"><span>ⓘ</span> Semua data dan hasil dalam project contoh bersifat simulasi. Jarak buffer adalah parameter pembelajaran, belum ditentukan dari kajian teknis drainase.</div>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> DrainScope • Project SIG</span><span>Dibangun dengan OpenLayers &amp; Turf.js</span></footer>
+  </div>
+  <script type="module" src="/src/analysis.js"></script>
+</body>
+</html>

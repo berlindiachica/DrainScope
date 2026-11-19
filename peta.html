@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DrainScope — Peta Interaktif</title><link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header"><a class="brand" href="/index.html"><img src="/assets/mark.svg" alt=""/><span><strong>DrainScope<span class="brand-dot">.</span></strong><small>Smart drainage. Safer spaces.</small></span></a><button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Navigasi utama"><a href="/index.html">Beranda</a><a class="active" href="/peta.html">Peta Interaktif</a><a href="/analisis.html">Analisis Spasial</a><a href="/index.html#tentang">Tentang</a></nav><div class="header-right"><span class="soft-pill"><span class="pulse-dot"></span> Demo Data</span><span class="avatar">DS</span></div></header>
+    <main class="workspace-main">
+      <div class="page-heading"><div><span class="eyebrow small">PUSAT PEMETAAN</span><h1>Eksplorasi data <span>spasial.</span></h1><p>Amati jaringan drainase dan titik genangan melalui peta interaktif.</p></div><a class="btn btn-outline small-btn" href="/analisis.html">Lanjut ke analisis <span>↗</span></a></div>
+      <div class="map-layout">
+        <aside class="map-sidebar">
+          <div class="side-title"><div><h2>Kontrol layer</h2><p>Atur data yang ingin ditampilkan</p></div><span class="side-icon">≡</span></div>
+          <div class="side-group"><h3>VISIBILITAS DATA</h3><label class="switch-row"><span class="switch-label"><i class="legend-badge line-badge"></i> Jaringan drainase</span><input type="checkbox" id="toggle-line" checked/><span class="switch-ui"></span></label><label class="switch-row"><span class="switch-label"><i class="legend-badge point-badge"></i> Titik genangan</span><input type="checkbox" id="toggle-point" checked/><span class="switch-ui"></span></label><label class="switch-row"><span class="switch-label"><i class="legend-badge area-badge"></i> Batas wilayah</span><input type="checkbox" id="toggle-polygon" checked/><span class="switch-ui"></span></label></div>
+          <div class="side-group"><h3>FILTER KONDISI</h3><label class="field-label" for="condition-filter">Status drainase</label><select class="input-select" id="condition-filter"><option value="Semua">Semua kondisi</option><option value="Baik">Baik</option><option value="Sedang">Sedang</option><option value="Buruk">Buruk</option></select><p class="hint">Filter hanya memengaruhi layer drainase.</p></div>
+          <div class="side-group"><h3>LEGENDA PETA</h3><div class="legend-row"><span class="legend-dash good"></span> Drainase baik</div><div class="legend-row"><span class="legend-dash medium"></span> Drainase sedang</div><div class="legend-row"><span class="legend-dash poor"></span> Drainase buruk</div><div class="legend-row"><span class="legend-dot"></span> Titik genangan</div><div class="legend-row"><span class="legend-surface"></span> Wilayah studi</div></div>
+          <div class="sidebar-bottom"><div class="sidebar-count"><strong id="visible-lines">—</strong><span>Saluran sesuai filter</span></div><button class="btn btn-reset" type="button" id="reset-map">↺ Reset tampilan</button></div>
+        </aside>
+        <section class="map-panel" aria-label="Peta interaktif"><div class="map-topbar"><div class="map-location"><span class="map-live-dot"></span><strong>Peta kondisi drainase</strong><span>•</span><span>OpenStreetMap</span></div><span class="map-data-badge">DATA SIMULASI</span></div><div class="map-canvas" id="map"><div id="popup" class="map-popup" hidden><button id="popup-close" class="popup-close" type="button" aria-label="Tutup popup">×</button><span id="popup-type" class="popup-type"></span><strong id="popup-name"></strong><div id="popup-detail" class="popup-detail"></div></div></div><div class="map-bottom"><span>Seret untuk menggeser, gulir untuk memperbesar, klik objek untuk melihat detail.</span><strong id="map-status">Memuat data...</strong></div></section>
+      </div>
+      <div class="notice-inline"><span>ⓘ</span> Peta ini memakai data ilustrasi untuk pengujian fitur, bukan titik banjir atau drainase hasil survei.</div>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> DrainScope • Project SIG</span><span>Dibangun dengan OpenLayers &amp; Turf.js</span></footer>
+  </div>
+  <script type="module" src="/src/map.js"></script>
+</body>
+</html>

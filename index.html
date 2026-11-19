@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DrainScope, dashboard pemetaan kondisi drainase dan analisis spasial titik genangan." />
+  <title>DrainScope — Beranda</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="/index.html" aria-label="DrainScope Beranda"><img src="/assets/mark.svg" alt=""/><span><strong>DrainScope<span class="brand-dot">.</span></strong><small>Smart drainage. Safer spaces.</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="/index.html" class="active">Beranda</a><a href="/peta.html">Peta Interaktif</a><a href="/analisis.html">Analisis Spasial</a><a href="#tentang">Tentang</a>
+      </nav>
+      <div class="header-right"><span class="soft-pill"><span class="pulse-dot"></span> Demo Data</span><span class="avatar">DS</span></div>
+    </header>
+
+    <main>
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <span class="eyebrow"><span class="eyebrow-line"></span> SISTEM INFORMASI GEOGRAFIS</span>
+          <h1 id="hero-title">Pahami aliran air.<br/><span>Antisipasi genangan.</span></h1>
+          <p class="hero-copy">Platform pemetaan kondisi drainase dan titik genangan untuk membantu identifikasi wilayah yang memerlukan perhatian lebih cepat, berbasis analisis spasial.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="/peta.html">Jelajahi peta <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="/analisis.html">Lihat analisis <span aria-hidden="true">→</span></a></div>
+          <div class="hero-proof"><span class="proof-icon">✓</span><span>3 layer spasial • Point, Line &amp; Polygon</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustrasi jaringan drainase dan aliran air">
+          <div class="visual-aurora"></div>
+          <img class="hero-globe" src="/assets/watershed.svg" alt="Ilustrasi konseptual aliran air dan jaringan pemantauan" />
+          <div class="floating-card floating-top"><div class="float-icon aqua">◈</div><div><small>PEMETAAN CERDAS</small><strong>3 Layer Spasial</strong><span>Terintegrasi pada satu peta</span></div></div>
+          <div class="floating-card floating-bottom"><div class="float-icon orange">⌁</div><div><small>ANALISIS GEOSPASIAL</small><strong>Buffer &amp; Overlay</strong><span>Untuk prioritas pemeriksaan</span></div></div>
+          <span class="visual-caption">Peta konseptual • bukan data lapangan</span>
+        </div>
+      </section>
+
+      <section class="stats-section" aria-label="Ringkasan data demonstrasi">
+        <div class="stat-card"><div class="stat-top"><span class="stat-icon mint">≋</span><span class="stat-tag">LINE</span></div><div class="stat-bottom"><strong id="count-drainase">—</strong><span>Saluran drainase</span><small>Objek garis terdata</small></div></div>
+        <div class="stat-card"><div class="stat-top"><span class="stat-icon sky">⌖</span><span class="stat-tag">POINT</span></div><div class="stat-bottom"><strong id="count-genangan">—</strong><span>Titik genangan</span><small>Lokasi yang diamati</small></div></div>
+        <div class="stat-card"><div class="stat-top"><span class="stat-icon lavender">▱</span><span class="stat-tag">POLYGON</span></div><div class="stat-bottom"><strong id="count-wilayah">—</strong><span>Area pemetaan</span><small>Batas wilayah studi</small></div></div>
+        <div class="distribution-card"><div class="distribution-info"><small>RINGKASAN DATA</small><strong>Kondisi Drainase</strong><span>Distribusi kategori saluran</span><a href="/peta.html">Lihat detail <span>↗</span></a></div><div class="donut" id="condition-donut"><div class="donut-inner"><strong id="donut-total">—</strong><small>saluran</small></div></div></div>
+      </section>
+
+      <section class="features-section" id="tentang">
+        <div class="section-head"><div><span class="eyebrow small">APA YANG BISA DILAKUKAN?</span><h2>Satu platform, tiga langkah.</h2></div><p>Visualisasikan kondisi lapangan, telusuri kategori, lalu temukan area yang perlu diperiksa.</p></div>
+        <div class="feature-grid">
+          <a class="feature-card" href="/peta.html"><span class="feature-number">01 / VISUALISASI</span><div class="feature-graphic graphic-map"><span class="map-trace trace-one"></span><span class="map-trace trace-two"></span><span class="map-pin pin-one"></span><span class="map-pin pin-two"></span><span class="map-pin pin-three"></span></div><h3>Jelajahi data spasial</h3><p>Tampilkan tiga layer dan informasi setiap objek melalui peta interaktif.</p><span class="feature-link">Buka peta <span>↗</span></span></a>
+          <a class="feature-card" href="/peta.html"><span class="feature-number">02 / FILTER DATA</span><div class="feature-graphic graphic-filter"><span class="filter-line green"></span><span class="filter-line amber"></span><span class="filter-line red"></span><span class="filter-choice">✓</span></div><h3>Fokus pada yang penting</h3><p>Aktifkan layer dan saring saluran berdasarkan kondisi baik, sedang atau buruk.</p><span class="feature-link">Coba filter <span>↗</span></span></a>
+          <a class="feature-card" href="/analisis.html"><span class="feature-number">03 / ANALISIS</span><div class="feature-graphic graphic-analysis"><span class="analysis-ring ring-one"></span><span class="analysis-ring ring-two"></span><span class="analysis-dot"></span></div><h3>Temukan area prioritas</h3><p>Analisis kedekatan titik genangan dengan drainase bermasalah menggunakan buffer.</p><span class="feature-link">Lihat analisis <span>↗</span></span></a>
+        </div>
+      </section>
+      <section class="notice-band"><span class="notice-mark">i</span><div><strong>Project pembelajaran — data simulasi</strong><p>Angka dan lokasi dalam starter project ini hanyalah contoh teknis. Ganti file GeoJSON dengan data survei asli sebelum mempublikasikan hasil atau membuat kesimpulan.</p></div></section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> DrainScope • Project SIG</span><span>Dibangun dengan OpenLayers &amp; Turf.js</span></footer>
+  </div>
+  <script type="module" src="/src/home.js"></script>
+</body>
+</html>
